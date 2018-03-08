@@ -1,0 +1,54 @@
+html,body{
+  font-family: "Microsoft YaHei",Arial, Helvetica, sans-serif;
+  background-color: rgb(243, 243, 243);
+  margin: 0;
+  padding: 0;
+}
+.banner {
+  height: 20vw;
+
+  border: 5px black solid;
+}
+.head{
+  background-image: url('./head.png');
+  background-size: cover;
+  height: 20vw;
+}
+section {
+  display: flex;
+  flex-direction: column;
+
+  margin: 1vw;
+
+  a{
+    background-color: #fff;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    margin-bottom:2vw;
+    .post{
+      flex: none;
+      height: 25vw;
+      width: 36vw;
+      background-image: url('./post.png');
+      background-size: cover;
+      margin-right: 5vw;
+    }
+    .info{
+      display: flex;
+      flex-direction: column;
+      .name{
+        margin-top:2vw;
+        font-size: 6vw;
+        font-weight: bold;
+      }
+      .detail{
+        font-size: 2vw;
+        color: rgb(16,73,71);
+        margin-top:2vw;
+      }
+    }
+  }
+}
+
+
