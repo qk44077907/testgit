@@ -1,51 +1,75 @@
-html,body{
-  font-family: "Microsoft YaHei",Arial, Helvetica, sans-serif;
-  background-color: rgb(243, 243, 243);
+html, body {
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #282828;
 }
-.banner {
-  height: 20vw;
 
-  border: 5px black solid;
+body {
+  background-color: #fff;
+  margin: 0 auto;
 }
-.head{
+
+.banner {
+  height: 30/10rem;
+  background-size: cover;
+  //border: 5px black solid;
+}
+
+.head {
   background-image: url('./head.png');
   background-size: cover;
-  height: 20vw;
+  height: 20/10rem;
+}
+a.pure{
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-color: rgb(243, 243, 243);
+  text-decoration: none;
+  color: black;
+  height: 528/37.5rem;
 }
 section {
   display: flex;
   flex-direction: column;
-
-  margin: 1vw;
-
-  a{
+  &.pure {
+    height: 528/37.5rem;
+  }
+  background-size: cover;
+  background-color: rgb(243, 243, 243);
+  //margin: 1/10rem;
+  //padding: 0.1rem;
+  a {
     background-color: #fff;
     display: flex;
     text-decoration: none;
     color: black;
-    margin-bottom:2vw;
-    .post{
+    margin-bottom: 2/10rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    .post {
       flex: none;
-      height: 25vw;
-      width: 36vw;
-      background-image: url('./post.png');
+      height: 22/10rem;
+      width: 28/10rem;
+      background-image: url('posts/post1.png');
       background-size: cover;
-      margin-right: 5vw;
+      margin-right: 4/10rem;
     }
-    .info{
+    .info {
       display: flex;
       flex-direction: column;
-      .name{
-        margin-top:2vw;
-        font-size: 6vw;
+      padding-right: 0.5rem;
+      .name {
+        height: 0.8rem;
+        margin-top: 2/10rem;
+        font-size: 4.5/10rem;
         font-weight: bold;
       }
-      .detail{
-        font-size: 2vw;
-        color: rgb(16,73,71);
-        margin-top:2vw;
+      .detail {
+        font-size: 2/10rem;
+        color: rgb(16, 73, 71);
+        margin-top: 7/10rem;
       }
     }
   }

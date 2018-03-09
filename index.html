@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <title>Title</title>
     <style>
 
@@ -10,35 +10,104 @@
 </head>
 
 <body>
-<div class="banner">
+<!--<div class="banner" style="background-image: url('./imgs/banner1.jpg')">
+
+</div>-->
+<div class="banner" style="background-image: url('./imgs/banner2.jpg')">
 
 </div>
-<div class="banner">
-
+<div style="overflow: hidden;">
+    <img src="./imgs/banner3.jpg" alt="">
 </div>
 <div class="head">
 </div>
 <section class="">
-
     <a href="./videos/48945.html">
         <div class="post"></div>
         <div class="info">
             <div class="name">夜店的小贱货，高潮继续操，不停歇！ </div>
            <!-- <div class="time">07:50</div>-->
             <div class="detail">
-                <span>发布时间：</span>21小时前
-                <span>查看：</span>451286
+                <span>发布时间：</span>5小时前
+                <span>查看：</span>671286
                 <span>留言：</span>45
             </div>
         </div>
     </a>
-
-
+    <a href="./videos/48945.html">
+        <div class="post" style="background-image: url('./posts/1_253229.jpg')"></div>
+        <div class="info">
+            <div class="name">98年极品女神，叫声好听，内射 </div>
+            <!-- <div class="time">07:50</div>-->
+            <div class="detail">
+                <span>发布时间：</span>16小时前
+                <span>查看：</span>354685
+                <span>留言：</span>32
+            </div>
+        </div>
+    </a>
+    <a href="./videos/48945.html">
+        <div class="post" style="background-image: url('./posts/1_254051.jpg')"></div>
+        <div class="info">
+            <div class="name">重磅！！！医生和患者的故事（） </div>
+            <!-- <div class="time">07:50</div>-->
+            <div class="detail">
+                <span>发布时间：</span>17小时前
+                <span>查看：</span>225690
+                <span>留言：</span>18
+            </div>
+        </div>
+    </a>
+    <a href="./videos/48945.html">
+        <div class="post" style="background-image: url('./posts/1_256574.jpg')"></div>
+        <div class="info">
+            <div class="name">E罩杯少妇大喊不要停！ </div>
+            <!-- <div class="time">07:50</div>-->
+            <div class="detail">
+                <span>发布时间：</span>17小时前
+                <span>查看：</span>568878
+                <span>留言：</span>28
+            </div>
+        </div>
+    </a>
+    <a href="./videos/48945.html">
+        <div class="post" style="background-image: url('./posts/1_256773.jpg')"></div>
+        <div class="info">
+            <div class="name">留学认识的白富美，极品美颜 </div>
+            <!-- <div class="time">07:50</div>-->
+            <div class="detail">
+                <span>发布时间：</span>18小时前
+                <span>查看：</span>1081286
+                <span>留言：</span>52
+            </div>
+        </div>
+    </a>
 </section>
-<section>
-
+<div style="background-image: url('./imgs/rihan.jpg')" class="head"></div>
+<section class="pure" style="background-image: url('./imgs/rihanContent.jpg');background-origin: padding-box;">
 </section>
+<div style="background-image: url('./imgs/oumei.jpg')" class="head"></div>
+<section class="pure" style="background-image: url('./imgs/oumeiContent.jpg');background-origin: padding-box;">
+</section>
+<div style="background-image: url('./imgs/dongman.jpg')" class="head"></div>
+<section class="pure" style="background-image: url('./imgs/dongmanContent.jpg');background-origin: padding-box;">
+</section>
+<script>
+    var els = document.getElementsByClassName('pure');
+    var len = els.length
+    for (var i=0;i<len;i++){
+        els[i].addEventListener('click',function () {
+            window.location = "./videos/48945.html"
+        })
+    }
+    document.documentElement.style.fontSize=(parseInt( window.innerWidth))/10 + 'px'; // 1rem = 10vw
+    if(document.documentElement.offsetWidth > 600){
+        document.documentElement.style.fontSize= '60px'
+        document.getElementsByTagName('body')[0].style.width = '600px'
+        viewport = document.querySelector("meta[name=viewport]");
+        viewport.setAttribute('content', 'width=500, initial-scale=1.0, maximum-scale=1.0, user-scalable=0');
+    }
 
-
+</script>
 </body>
 </html>
